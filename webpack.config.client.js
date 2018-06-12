@@ -1,12 +1,13 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const outputPath = process.env.NODE_ENV === 'development' ? 'client/public' : 'dist/public'; // prettier-ignore
 
 module.exports = {
     mode: process.env.NODE_ENV,
     entry: './client/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist/public'),
+        path: path.resolve(__dirname, outputPath),
         filename: './assets/js/app.js'
     },
     plugins: [

@@ -10,9 +10,11 @@ import fooRouter from './routes/foos';
 // Initialize the Express app.
 const app = new Express();
 
-// Set Development modes checks.
+// Is this development mode?
 const isDevMode = process.env.NODE_ENV === 'development' || false;
-const isProdMode = process.env.NODE_ENV === 'production' || false;
+
+// Determine static, client-side file path.
+const staticPath = isDevMode ? '../client/public' : '../dist/public';
 
 // Apply middleware.
 isDevMode && app.use(morgan('dev'));
@@ -21,7 +23,7 @@ app.use(cors());
 
 // Set up end points.
 app.use('/foos', fooRouter);
-app.use('/', Express.static(path.join(__dirname, '../dist/public')));
+app.use('/', Express.static(path.join(__dirname, staticPath)));
 
 // Connect database.
 mongoose.connect(

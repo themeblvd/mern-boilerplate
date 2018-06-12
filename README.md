@@ -4,38 +4,25 @@ Here's my working MERN boilerplate. I'll continue to tweak things.
 
 ## Terminal Commands
 
-### Automated Build
+### Primary Commands
 
-Use these commands to watch for changes and recompile files automatically.
+These are the commands you'll use the most.
 
-* `npm run watch:client` &mdash; Automatically compiles client (for development).
-* `npm run watch:server` &mdash; Automatically compiles server (for development).
+* `npm run start` - Start the development server and watch for file changes.
+* `npm run build` - Build the entire, final `/dist` package for production.
 
-*Note: If you're making both client and server changes, it's helpful to run both of the above commands simultaneously in different terminal windows.*
+### Additional Commands
 
-### Manual Build
+Here are some additional commands that come in handy.
 
-Use these commands when working through issues or making big changes.
+* `npm run client` - Compile the development client-side files once.
+* `npm run server` - Start the development server (see note below).
+* `npm run build:client` - Built the client-side files only within `/dist`.
+* `npm run build:server` - Built the server file only within `/dist`.
+* `npm run server:prod` - Start the production server, to test the final build (see note below).
+* `npm run js-lint` - Check for JavaScript linting errors.
+* `npm run js-lint:fix` - Allow JavaScript linter to fix what it can, automatically.
 
-* `npm run build` &mdash; Build both server and client (for development).
-* `npm run build:client` &mdash; Compiles client (for development).
-* `npm run build:server` &mdash; Compiles server (for development).
+*Note: `npm run server` is helpful when working on just server files. It runs the development server without Webpack watching for changes on the client-side files. Because we transpile babel on the fly during development, this is all we need.*
 
-### Production Build
-
-The following builds out the entire `/dist` folder, ready for production.
-
-* `npm run build:production` &mdash; Compiles both server and client (for production).
-
-### Development Server
-
-Use this command to start the development server. This will use `nodemon` so that the server automatically refreshes when it sees changes made.
-
-* `npm run server` &mdash; Start the development server at `http://localhost:8080`.
-
-*Note: The development server runs from `/dist` directory; so the server and client must be compiled for this to work.*
-
-### JavaScript Linting
-
-* `npm js-lint` &mdash; Check for linting errors.
-* `npm js-lint:fix` &mdash; Allow linter to fix what it can automatically.
+*Note: `npm run server:prod` is helpful for testing the production build. On the actual production server, you'll want to run `/dist/server.js` with some sort of process manager, like [Forever](https://expressjs.com/en/advanced/pm.html#forever).*
