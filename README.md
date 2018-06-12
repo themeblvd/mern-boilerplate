@@ -1,6 +1,8 @@
 # MERN Boilerplate
 
-Here's my working MERN boilerplate. I'll continue to tweak things.
+Managing a project structure that handles the whole stack involves a lot of different descisions to be made, with a lot of potential variations... especially in the full-stack JavaScript world. So here's my working MERN boilerplate.
+
+If you're looking for simpler starter for just setting up a client-side, static React app, check out my [React boilerplate](https://github.com/themeblvd/react-boilerplate).
 
 ## Quick Start
 
@@ -39,8 +41,8 @@ Here are some additional commands that come in handy.
 
 * `npm run client` - Compile the development client-side files once.
 * `npm run server` - Start the development server (see note below).
-* `npm run build:client` - Built the client-side files only within `/dist`.
-* `npm run build:server` - Built the server file only within `/dist`.
+* `npm run build:client` - Build the client-side files within `/dist` once.
+* `npm run build:server` - Build the server file within `/dist` once.
 * `npm run server:prod` - Start the production server, to test the final build (see note below).
 * `npm run js-lint` - Check for JavaScript linting errors.
 * `npm run js-lint:fix` - Allow JavaScript linter to fix what it can, automatically.
