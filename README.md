@@ -4,15 +4,17 @@ Here's my working MERN boilerplate. I'll continue to tweak things.
 
 ## Project Structure
 
-* `dist/` - Final build, for production.
-    * `server.js` - Runs the server in production.s
-* `client/` - Client-side React app.
+* `dist/` - **Final build, for production.**
+    * `server.js` - Runs the server in production.
+* `client/` - **Client-side React app.**
     * `assets/` - Images, SCSS files, etc.
     * `components/` - React components.
     * `store/` - Redux store files.
     * `public/` - Compiled React app, for development.
-* `server/` - Server files, utilizing Express.
-* `index.js` - Entry point for running development server, or testing production build.
+* `server/` - **Server files, utilizing Express and Mongoose.**
+    * `models/` -  Mongoose schemas.
+    * `routes/` -  API routes, organized by the endpoint.
+* `index.js` - Entry point for running development server, or testing production build. Uses port `8080`.
 
 ## Terminal Commands
 
