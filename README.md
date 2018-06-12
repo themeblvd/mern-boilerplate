@@ -2,7 +2,7 @@
 
 Here's my working MERN boilerplate. I'll continue to tweak things.
 
-## Important Terminal Commands
+## Terminal Commands
 
 ### Automated Build
 
@@ -11,7 +11,7 @@ Use these commands to watch for changes and recompile files automatically.
 * `npm run watch:client` &mdash; Automatically compiles client (for development).
 * `npm run watch:server` &mdash; Automatically compiles server (for development).
 
-*Notes: If you're making both client and server changes, it's helpful to run both of the following commands simultaneously in different terminal windows.*
+*Note: If you're making both client and server changes, it's helpful to run both of the above commands simultaneously in different terminal windows.*
 
 ### Manual Build
 
@@ -22,6 +22,8 @@ Use these commands when working through issues or making big changes.
 * `npm run build:server` &mdash; Compiles server (for development).
 
 ### Production Build
+
+The following builds out the entire `/dist` folder, ready for production.
 
 * `npm run build:production` &mdash; Compiles both server and client (for production).
 
