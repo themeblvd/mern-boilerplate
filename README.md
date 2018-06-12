@@ -2,10 +2,18 @@
 
 Here's my working MERN boilerplate. I'll continue to tweak things.
 
+## Quick Start
+
+1. Clone this repository.
+2. Install the dependencies by running `npm install`.
+3. Run `npm run start` to start the development server and watch for changes.
+4. View development server at `http://localhost:8080`.
+
 ## Project Structure
 
 * `dist/` - **Final build, for production.**
     * `server.js` - Runs the server in production.
+    * `public/` - Contains client-side React app, served statically by `server.js`.
 * `client/` - **Client-side React app.**
     * `assets/` - Images, SCSS files, etc.
     * `components/` - React components.
