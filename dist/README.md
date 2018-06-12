@@ -1,3 +1,3 @@
-Running `npm run build` (for development) or `npm run build:production` (for production) will compile a `server.js` file here, along with a `/public` directory containing the static client-side files that it will serve.
+Running `npm run build` will compile the final production build here. This includse a `server.js` file, along with a `/public` directory containing the static client-side files that it'll serve.
 
-Start the server with `npm run server`.
+You can test the production build with `npm run server:prod` and viewing at `http://localhost/8080`.
