@@ -11,7 +11,7 @@
         "build:production:server": "NODE_ENV=production webpack --config webpack.config.server.js",
         "watch:client": "NODE_ENV=development webpack --config webpack.config.client.js --watch",
         "watch:server": "NODE_ENV=development webpack --config webpack.config.server.js --watch",
-        "server": "nodemon dist/server.js",
+        "server": "nodemon index.js",
         "js-lint": "eslint src/**/*.js",
         "js-lint:fix": "eslint src/**/*.js --fix"
     },
@@ -41,6 +41,7 @@
         "babel-preset-env": "*",
         "babel-preset-react": "*",
         "babel-preset-react-app": "*",
+        "babel-register": "*",
         "eslint": "*",
         "eslint-config-prettier": "*",
         "eslint-config-react-app": "*",
