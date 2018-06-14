@@ -27,16 +27,16 @@ app.use('/', Express.static(path.join(__dirname, staticPath)));
 
 // Connect database.
 mongoose.connect(
-    serverConfig.mongoURL,
-    err => {
-        if (err) {
-            throw err;
-        }
-        console.log('Connected to the database.');
+  serverConfig.mongoURL,
+  err => {
+    if (err) {
+      throw err;
     }
+    console.log('Connected to the database.');
+  }
 );
 
 // Run server.
 app.listen(serverConfig.port, function() {
-    console.log(`The server is now running on port ${serverConfig.port}.`);
+  console.log(`The server is now running on port ${serverConfig.port}.`);
 });
