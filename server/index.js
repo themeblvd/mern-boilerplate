@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import path from 'path';
-import { serverConfig } from '../config';
+import serverConfig from './config';
 import fooRouter from './routes/foos';
 
 // Initialize the Express app.
