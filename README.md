@@ -47,6 +47,7 @@ Here are some additional commands that come in handy.
 * `npm run format` - Apply stylistic code formatting to project's JavaScript files.
 * `npm run js-lint` - Check for JavaScript linting errors.
 * `npm run js-lint:fix` - Allow JavaScript linter to fix what it can, automatically.
+* `npm run report` - Generates `./report-client.txt` and `./report-server.txt` with stats about modules used.
 
 *Note: `npm run server` is helpful when working on just server files. It runs the development server without Webpack watching for changes on the client-side files. Because we transpile with babel on the fly during development, our ES6 server code will run without needing Webpack.*
 
