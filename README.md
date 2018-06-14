@@ -44,6 +44,7 @@ Here are some additional commands that come in handy.
 * `npm run build:client` - Build the client-side files within `/dist` once.
 * `npm run build:server` - Build the server file within `/dist` once.
 * `npm run server:prod` - Start the production server, to test the final build (see note below).
+* `npm run format` - Apply stylistic code formatting to project's JavaScript files.
 * `npm run js-lint` - Check for JavaScript linting errors.
 * `npm run js-lint:fix` - Allow JavaScript linter to fix what it can, automatically.
 
