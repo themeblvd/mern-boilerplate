@@ -88,9 +88,7 @@ module.exports = {
                         loader: 'sass-loader',
                         options: {
                             outputStyle:
-                                process.env.NODE_ENV == 'production'
-                                    ? 'compressed'
-                                    : 'expanded'
+                                process.env.NODE_ENV === 'production' ? 'compressed' : 'expanded'
                         }
                     }
                 ]
