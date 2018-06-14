@@ -4,7 +4,7 @@
   "description": "",
   "repository": "https://github.com/themeblvd/mern-boilerplate.git",
   "scripts": {
-    "start": "concurrently 'NODE_ENV=development webpack --config webpack.config.client.js' 'npm run server'",
+    "start": "concurrently 'NODE_ENV=development webpack --config webpack.config.client.js --watch' 'npm run server'",
     "build": "npm run build:client && npm run build:server",
     "build:client": "NODE_ENV=production webpack --config webpack.config.client.js",
     "build:server": "NODE_ENV=production webpack --config webpack.config.server.js",
