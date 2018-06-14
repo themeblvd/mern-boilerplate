@@ -25,16 +25,27 @@ class App extends Component {
    * @return {Component}
    */
   render() {
+    const { foos } = this.props;
+
     return (
       <div className="app">
         <header>
-          <h1>Example MERN App</h1>
+          <h1>MERN Boilerplate</h1>
         </header>
-        <ul>
-          {this.props.foos.map(foo => {
-            return <li key={foo._id}>{foo.title}</li>;
-          })}
-        </ul>
+        {foos.length ? (
+          <ul>
+            {foos.map(foo => {
+              return <li key={foo._id}>{foo.title}</li>;
+            })}
+          </ul>
+        ) : (
+          <p>There aren't any "foos" in the database yet.</p>
+        )}
+        <p>
+          Try a <code>POST</code> request via Postman to{' '}
+          <code>{'https://localhost:8080/foos'}</code> with a body like{' '}
+          <code>{'{"title": "My New Foo"}'}</code>.
+        </p>
       </div>
     );
   }
